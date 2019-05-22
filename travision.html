@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travel Vision</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+  </head>
+
+  <body>
+    <header class="container">
+      <h1>
+        <div class="site-title">
+          <a href="lovegreece.gr"
+            ><strong class="strong-text">Travision</strong
+            ><span class="light-text">.com</span></a
+          >
+        </div>
+      </h1>
+
+      <div class="navigation-area">
+        <nav>
+          <ul>
+            <li><a href="#">Find deals</a></li>
+            <li><a href="#">Trips of a Lifetime</a></li>
+            <li><a href="#">Write a Review</a></li>
+            <li><a href="#">Homes &amp; Apartments</a></li>
+          </ul>
+        </nav>
+        <div class="button-area">
+          <button type="button" class="btn btn-text btn-register">Register</button>
+          <button type="button" class="btn btn-text">Sign in</button>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <div class="container">
+          <form action="" method="POST" class="form-style">
+            <h2 class="search-title">Find the best deals</h2>
+            <div class="search-input">
+              <label for="search">Search destination</label>
+              <div class="search-wrapper">
+                <input type="search" name="search" id="search" />
+              </div>
+            </div>
+
+            <div class="check-in-out">
+              <div class="checkin-out-div">
+                <label for="date">Check-in</label>
+                <div class="input-wrapper">
+                  <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    placeholder="Enter date"
+                  />
+                </div>
+              </div>
+
+              <div class="checkin-out-div">
+                <label for="date">Check-out</label>
+                <div class="input-wrapper">
+                  <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    placeholder="Enter date"
+                  />
+                </div>
+              </div>
+            </div>
+            <input type="submit" value="Search" />
+          </form>
+        </div>
+        <div class="mySlides fade">
+          <img src="./images/img1.jpg" class="mySlide-img" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./images/img2.jpg" class="mySlide-img" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./images/img3.jpg" class="mySlide-img" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="./images/img4.jpeg" class="mySlide-img" />
+        </div>
+
+        <div class="indicators">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-apartments">
+      <div class="container">
+        <h1 class="section-title">Awesome Places to Stay</h1>
+        <h2 class="section-subtitle">
+          Top destinations for homes and apartments
+        </h2>
+
+        <div>
+          <div class="apartment_card">
+            <div class="apartment_card__img">
+              <img
+                src="./images/house1.jpeg"
+                alt="Apartment image"
+                class="apt-image"
+              />
+            </div>
+            <div class="apartment_card__details">
+              <div class="apartment_card__details_title">
+                <h3 class="apartment_card__details_title--title">
+                  Holiday Home
+                </h3>
+                <p class="apartment_card__details_title--rate">Very good - 8.3</p>
+              </div>
+
+              <div class="apartment_card__details_desc">
+                <p class="apartment_card__details_desc--descr">
+                  Acropolis House is a vacation home featuring free WiFi and a
+                  terrace located in Athens. The property is 201 m from
+                  Acropolis Museum and features views of the city.
+                </p>
+                <p class="apartment_card__details_desc--price">€ 150</p>
+              </div>
+
+              <div class="apartment_card__details_info">
+                <p>
+                  <i class="fa fa-users users-capacity"></i>Twin/Double Room
+                </p>
+                <p><button class="btn btn-register">Book Now</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="apartment_card">
+            <div class="apartment_card__img">
+              <img
+                src="./images/house1.jpeg"
+                alt="Apartment image"
+                class="apt-image"
+              />
+            </div>
+            <div class="apartment_card__details">
+              <div class="apartment_card__details_title">
+                <h3 class="apartment_card__details_title--title">
+                  Holiday Home
+                </h3>
+                <p class="apartment_card__details_title--rate">Very good 8.3</p>
+              </div>
+
+              <div class="apartment_card__details_desc">
+                <p class="apartment_card__details_desc--descr">
+                  Acropolis House is a vacation home featuring free WiFi and a
+                  terrace located in Athens. The property is 201 m from
+                  Acropolis Museum and features views of the city.
+                </p>
+                <p class="apartment_card__details_desc--price">€ 150</p>
+              </div>
+
+              <div class="apartment_card__details_info">
+                <p>
+                  <i class="fa fa-users users-capacity"></i>Twin/Double Room
+                </p>
+                <p><button class="btn btn-register">Book Now</button></p>
+              </div>
+            </div>
+          </div>
+          <div class="apartment_card">
+            <div class="apartment_card__img">
+              <img
+                src="./images/house1.jpeg"
+                alt="Apartment image"
+                class="apt-image"
+              />
+            </div>
+            <div class="apartment_card__details">
+              <div class="apartment_card__details_title">
+                <h3 class="apartment_card__details_title--title">
+                  Holiday Home
+                </h3>
+                <p class="apartment_card__details_title--rate">Very good 8.3</p>
+              </div>
+
+              <div class="apartment_card__details_desc">
+                <p class="apartment_card__details_desc--descr">
+                  Acropolis House is a vacation home featuring free WiFi and a
+                  terrace located in Athens. The property is 201 m from
+                  Acropolis Museum and features views of the city.
+                </p>
+                <p class="apartment_card__details_desc--price">€ 150</p>
+              </div>
+
+              <div class="apartment_card__details_info">
+                <p>
+                  <i class="fa fa-users users-capacity"></i>Twin/Double Room
+                </p>
+                <p><button class="btn btn-register">Book Now</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="googleMap"></div>
+    </section>
+
+    <section class="section-places">
+      <div class="container">
+        <h1 class="section-title">Awesome Places to See</h1>
+        <h2 class="section-subtitle">
+          Find the best places to enjoy your adventure
+        </h2>
+
+        <div class="row_card">
+          <div class="place_card">
+            <div class="place_card--img">
+              <img
+                src="./images/naxos.jpg"
+                alt="Place image"
+                class="place-image"
+              />
+            </div>
+            <div class="place_card--tag">BEACHES</div>
+            <div class="place_card--name"><h3>Naxos Chora</h3></div>
+            <div class="place_card--descr">
+              Lorem ipsum is simply dummy text of the printing and typesetting
+              industry.Lorem ipsum is simply dummy text of the printing and
+              typesetting industry.
+            </div>
+            <div class="place_card--link">
+              <a href="#">Find out more...</a>
+            </div>
+          </div>
+
+          <div class="place_card">
+            <div class="place_card--img">
+              <img
+                src="./images/rhodes.jpeg"
+                alt="Apartment image"
+                class="place-image"
+              />
+            </div>
+            <div class="place_card--tag">Scenery</div>
+            <div class="place_card--name"><h3>Rhodes</h3></div>
+            <div class="place_card--descr">
+              Lorem ipsum is simply dummy text of the printing and typesetting
+              industry.Lorem ipsum is simply dummy text of the printing and
+              typesetting industry.
+            </div>
+            <div class="place_card--link">
+              <a href="#">Find out more...</a>
+            </div>
+          </div>
+
+          <div class="place_card">
+            <div class="place_card--img">
+              <img
+                src="./images/fira.jpg"
+                alt="Place image"
+                class="place-image"
+              />
+            </div>
+            <div class="place_card--tag">Relaxation</div>
+            <div class="place_card--name"><h3>Fira</h3></div>
+            <div class="place_card--descr">
+              Relax in Fira, the modern capital of the Greek Aegean island of Santorini. Enjoy the most beautiful sunset in the world, the wonderful beaches and the greek food.
+            </div>
+            <div class="place_card--link">
+              <a href="#">Find out more...</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row_card">
+          <div class="place_card">
+            <div class="place_card--img">
+              <img
+                src="./images/naxos.jpg"
+                alt="Place image"
+                class="place-image"
+              />
+            </div>
+            <div class="place_card--tag">BEACHES</div>
+            <div class="place_card--name"><h3>Naxos Chora</h3></div>
+            <div class="place_card--descr">
+              Lorem ipsum is simply dummy text of the printing and typesetting
+              industry.Lorem ipsum is simply dummy text of the printing and
+              typesetting industry.
+            </div>
+            <div class="place_card--link">
+              <a href="#">Find out more...</a>
+            </div>
+          </div>
+
+          <div class="place_card">
+            <div class="place_card--img">
+              <img
+                src="./images/rhodes.jpeg"
+                alt="Place image"
+                class="place-image"
+              />
+            </div>
+            <div class="place_card--tag">Scenery</div>
+            <div class="place_card--name"><h3>Rhodes</h3></div>
+            <div class="place_card--descr">
+              Lorem ipsum is simply dummy text of the printing and typesetting
+              industry.Lorem ipsum is simply dummy text of the printing and
+              typesetting industry.
+            </div>
+            <div class="place_card--link">
+              <a href="#">Find out more...</a>
+            </div>
+          </div>
+
+          <div class="place_card">
+            <div class="place_card--img">
+              <img
+                src="./images/fira.jpg"
+                alt="Place image"
+                class="place-image"
+              />
+            </div>
+            <div class="place_card--tag">Relexation</div>
+            <div class="place_card--name"><h3>Fira</h3></div>
+            <div class="place_card--descr">
+              Relax in Fira, the modern capital of the Greek Aegean island of Santorini. Enjoy the most beautiful sunset in the world, the wonderful beaches and the greek food.
+            </div>
+            <div class="place_card--link">
+              <a href="#">Find out more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer_container">
+          <div class="site-title">
+            <a href="travision.com"
+              ><strong class="strong-text">travision</strong>.com</a
+            >
+          </div>
+          <div class="footer_container__links">
+            <ul>
+              <li><a href="#">Apartments</a></li>
+              <li><a href="#">Resorts</a></li>
+              <li><a href="#">Villas</a></li>
+              <li><a href="#">Hostels</a></li>
+              <li><a href="#">B&amp;Bs</a></li>
+              <li><a href="#">Guesthouses</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#">Apartments</a></li>
+              <li><a href="#">Resorts</a></li>
+              <li><a href="#">Villas</a></li>
+              <li><a href="#">Hostels</a></li>
+              <li><a href="#">B&amp;Bs</a></li>
+              <li><a href="#">Guesthouses</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#">Apartments</a></li>
+              <li><a href="#">Resorts</a></li>
+              <li><a href="#">Villas</a></li>
+              <li><a href="#">Hostels</a></li>
+              <li><a href="#">B&amp;Bs</a></li>
+              <li><a href="#">Guesthouses</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyrights">
+          <p>Copyright © 2019 travision.com. All rights reserved.</p>
+          <p>Made by Alexandra Barka</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0hI3Jbzwgg1VaXb3koSjPGUrtMZpckUs&callback=initMap"
+    ></script>
+  </body>
+</html>
